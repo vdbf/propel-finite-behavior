@@ -1,4 +1,4 @@
-<?php namespace Vdbf\Propel\Finite\Factory;
+<?php namespace Vdbf\Propel\Behaviors\Finite\Factory;
 
 use Finite\Factory\AbstractFactory;
 use Finite\Factory\FactoryInterface;
@@ -12,7 +12,7 @@ use Illuminate\Contracts\Container\Container;
  * @author Eelke van den Bos
  * @package Erati\Foundation\StateMachine
  */
-class ContainerFactory extends AbstractFactory implements FactoryInterface
+class LaravelContainerFactory extends AbstractFactory implements FactoryInterface
 {
 
     /**

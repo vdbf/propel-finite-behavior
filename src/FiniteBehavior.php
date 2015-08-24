@@ -1,9 +1,6 @@
 <?php namespace Vdbf\Propel\Behaviors\Finite;
 
 use Propel\Generator\Model\Behavior;
-use Propel\Generator\Model\Database;
-use Propel\Generator\Model\ForeignKey;
-use Propel\Generator\Model\Table;
 
 class FiniteBehavior extends Behavior
 {
@@ -37,19 +34,4 @@ class FiniteBehavior extends Behavior
             ]);
         }
     }
-
-    public function objectMethods()
-    {
-        $methods = [];
-
-        $methods[] = $this->addStateMachineGetter();
-
-        return implode("\n\n", $methods);
-    }
-
-    protected function addStateMachineGetter()
-    {
-
-    }
-
 }
