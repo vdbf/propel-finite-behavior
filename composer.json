@@ -18,7 +18,6 @@
     }
   },
   "require": {
-      "propel/propel": "dev-master",
       "yohang/finite": "~1.1"
   },
   "require-dev": {
