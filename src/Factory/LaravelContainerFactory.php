@@ -38,7 +38,7 @@ class LaravelContainerFactory extends AbstractFactory implements FactoryInterfac
     /**
      * @return \Finite\StateMachine\StateMachineInterface
      */
-    public function createStateMachine()
+    public function createStateMachine(): \Finite\StateMachine\StateMachineInterface
     {
         return $this->container->make($this->key);
     }
